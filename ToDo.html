@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <Title>ToDo List app</Title>
+
+        <!-- font -->
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400.500.700" rel="stylesheet">
+        
+        <!-- stylesheet -->
+
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+        
+        <script type="text/javascript" src="scripts.js">
+
+        </script>
+    </head>
+
+    <body onLoad="renderDate(),renderMonth(),renderYear(),renderDay(),getTodos();">
+    
+        <div id="dateDisplay" class="container1"></div>
+        <div id="monthDisplay" class="container2"></div>
+        <div id="yearDisplay" class="container3"></div>
+        <div id="dayDisplay" class="container4"></div>
+       
+        <div class="container5">
+
+        <ul class="todo" id="todo"> 
+            
+        </ul>
+
+        <ul class="todo" id="completed">
+
+        </ul>
+        </div>
+        
+         <img id="AddNew" src="AddNew.png" alt="AddNew" onclick="addItemToDo()" style="position:absolute;top:550px;left:550px ">
+        
+
+
+    
+    </body>
+</html>
