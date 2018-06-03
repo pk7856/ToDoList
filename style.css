@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+.container1{
+    font-family: 'Times New Roman';
+    font-weight: 500;
+   font-size: 45px;
+    position: absolute;
+    left: 330px;
+    top: 40px;  
+}
+.container2{
+    font-family: serif;
+    font-weight: bold;
+    position: absolute;
+    left: 380px;
+    top: 50px;
+}
+.container3{
+    font-family: serif;
+    font-weight: bold;
+    position: absolute;
+    left: 380px;
+    top: 65px;
+}
+.container4{
+    font-family: serif;
+    font-weight: bold;
+    position: absolute;
+    left: 750px;
+    top: 60px;
+}
+body{
+    background: #edf0f1;
+    padding: 80px 0 0 0;
+    
+}
+
+.nofill
+{
+    fill: none;
+}
+
+.container5
+{
+    width: 30%;
+    float: left;
+
+    padding-left: 280px;
+    padding-top: 25px;
+      
+}
+
+ul.todo
+{
+    width: 100%;
+    float: left;
+    margin: 0 0 10px 0;
+    
+}
+ul.todo li
+{
+    width: 100%;
+    min-height: 30px;
+    float: left;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    line-height: 22px;
+
+    background:mintcream;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgba(44, 62, 80, 0.10);
+    margin:0 0 10px 0; 
+    padding:5px 100px 5px 0 ;
+    word-break: break-word;
+    
+}
+ul.todo li:last-of-type
+{
+    margin: 0;
+}
+ul.todo li .buttons
+{
+    width: 100px;
+    height: 50px;
+
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+}
+ul.todo li .buttons button
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: none;
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+}
+ul.todo li .buttons button:last-of-type::before
+{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #edf0f1;
+
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+ul.todo li .buttons button svg
+{
+    width: 22px;
+    height: 22px;
+
+    position: absolute;
+    top: 40%;
+    left: 100%;
+
+    margin: -11px 0 0 -11px;
+    
+}
+
+ul.todo li .buttons button.complete svg 
+{
+    border-radius: 11px;
+    border:1.5px ; 
+    
+    transition: background 0.2s ease;
+    
+}
+
+
+ul.todo:not(#completed) li .buttons button.complete:hover svg .fill
+{
+    fill: green; /*color after tick*/
+}
+
+ul.todo li .buttons button.complete svg .fill 
+{
+    fill:#fff;  /* for color of tick */
+}
+
